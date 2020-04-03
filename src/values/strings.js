@@ -1,0 +1,22 @@
+export const appStrings = {
+    version: '1.0.0',
+    servicio: 'http://127.0.0.1:5000/',
+    validacion: "Validación",
+    contrato: 'Contrato',
+    integrantes: 'Integrantes',
+    nuevo: 'Nuevo',
+    pago: 'Pago',
+    signout: 'Salir',
+    noAuth: 'Usuario no autorizado',
+    conexionFail: 'Problema de conexión',
+    sinResultados: 'Sin resultados que mostrar',
+    responsable: 'Responsable: ',
+    sinResponsablesTitle: 'Error',
+    sinResponsables: 'Los integrantes del grupo no se han cargado, intenta de nuevamente',
+    grupoNoEncontrado: 'No se encontró el grupo',
+    sucursalNoEncontrada: 'No se encontraron datos para esta sucursal',
+    leyendaDeConfidencialidad: 'Esta información es propiedad de FINANCIERA FINSOL S.A. de C.V. SOFOR, E.N.R. y se considera de carácter CONFIDENCIAL, por lo tanto',
+    leyendaDeConfidencialidad2: 'cualquier uso indebido o no autorizado de la misma, seráconsiderada comoresponsabilidad total y absoluta del causante.',
+    noDataExists: 'No se encontraron datos',
+};
+

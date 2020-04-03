@@ -31,10 +31,52 @@
 </template>
 
 <script>
+
+  import axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted(){
+    axios.post("http://localhost:8080/amortizacionesEdoCta/cloud/GetAmortizacionIndividual", 95480873)
+          .then(response => {
+            var status = response.status
+            console.log(status)
+            if(status == 200)
+            {
+              console.log(response.data)
+              var val = response.data
+              if(val.exitoso == true)
+              {
+                self.jsonAsesores = response.data
+                self.showTimeTableAsesores()
+                self.tableColumn_()
+                self.$message({
+                    showClose: true,
+                    message: 'Congrats, Asesores',
+                    type: 'success',
+                    duration: 3000
+                });
+              }
+              else
+              {
+                this.$message({
+                    showClose: true,
+                    message: 'Oops, Hubo un problema al obtener la Asesores, intente nuevamente',
+                    type: 'error',
+                    duration: 5000
+                });
+              }
+            }else{
+              console.log("Respuesta amortizaciones: " + response)
+            }
+
+          })
+          .catch(e => {
+            console.log(e)
+          })
   }
 }
 </script>
