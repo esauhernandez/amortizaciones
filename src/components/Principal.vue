@@ -1,6 +1,6 @@
 <template>
   <md-layout md-align="center" style="height: 100%;" md-gutter md-vertical-align="center" >
-	<md-layout md-flex="95" style=" height:95% !important; " >
+	<md-layout md-flex="195" style=" height:95% !important;">
         <md-layout md-flex="100" style="background:white; border-radius: 5px; height:100%;" >
             <md-layout md-flex="100" class="md-scrollbar" style="height:100%;" >
                 <md-card md-flex="100" style="width:100%; margin:10px;">

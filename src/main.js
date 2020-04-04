@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueResource from 'vue-resource'
 import VueMaterial from 'vue-material'
 import VueMdl 		from 'vue-mdl'
+import VueJsonToCsv from 'vue-json-to-csv'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'vue-material/dist/vue-material.css'
 
@@ -11,6 +12,7 @@ Vue.use(VueMaterial)
 Vue.use(VueMdl)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueJsonToCsv)
 
 Vue.config.productionTip = false
 
